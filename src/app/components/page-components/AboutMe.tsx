@@ -39,9 +39,7 @@ const AboutMe = () => {
                     <div className='logo-div'>
                         <Image src={Linkedin} alt='Linkedin' id='extra-social' className='social-logos' width={100} height={50}></Image>
                     </div>
-
                 </div>
-
             </section>
 
             <section className='specialize-section'>
