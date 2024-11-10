@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.about-me-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.followme{
+    margin-top: 5rem;
+}
+.about-me-follow-me {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Logo container grid layout */
+.logo-container {
+    display: grid;
+    gap: 1rem;
+    margin-top:  1rem;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black; 
+    border: 6px solid #007BFF;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#extra-social{
+    background-color: black;
+    padding: 0;
+    border-radius: 2rem ;
+    width: 50px;
+    border: 2px solid black;
+    height: 50px;
+    border: none;
+}
+.head-div{
+    width: 100%;
+    height: auto;
+    padding: 5rem 2rem;
+    font-size: large;
+}
+.social-logos{
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.social-logos:hover {
+    transform: scale(1.2) rotate(10deg);
+    opacity: 1;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+
+.intro-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.specialize-section {
+    width: 100%;
+    padding: 2rem 2rem;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-specializing {
+    text-align: center;
+    color: black;
+}
+
+.specializations-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.specializations {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.specializations:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(248, 247, 247, 0.1);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #007BFF;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#icons-image {
+    width: 50px;
+    height: 50px;
+}
+
+.icon_text h4 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin: 0.5rem 0;
+}
+
+.specialize_text p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .about-me-section {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-me-section {
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me-section {
+        padding: 1rem;
+    }
+
+    .about-me-follow-me {
+        font-size: 1.25rem;
+    }
+
+    .logo-container {
+        max-width: 100%;
+    }
+
+    .logo-div {
+        width: 35px;
+        height: 35px;
+    }
+
+    .specializations-div {
+        grid-template-columns: 1fr;
+    }
+
+    .head-specializing {
+        font-size: 2rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .about-me-follow-me {
+        font-size: 1rem;
+    }
+
+    .logo-div {
+        width: 20px;
+        height: 20px;
+    }
+}

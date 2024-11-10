@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    width: 100%;
+    margin-top: 0;
+    height: auto;
+    padding: 2rem 6rem;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-heading {
+    color: black;
+    font-size: 3.8rem;
+    word-spacing: 5px;
+    font-weight: 400;
+    line-height: 7.5rem;
+    z-index: 10;
+}
+
+#space-hero-heading {
+    padding-left: 3rem;
+}
+
+.hero-welcome {
+    z-index: 1;
+    padding: 1rem 0rem;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: large;
+}
+
+/* Fire Blow Animation */
+@keyframes fire-blow {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(-3deg) scale(1.1);
+    }
+
+    50% {
+        transform: rotate(2deg) scale(1.2);
+    }
+
+    75% {
+        transform: rotate(-2deg) scale(0.7);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+#hero-fire {
+    position: absolute;
+    left: -70px;
+    bottom: -40px;
+    width: 16rem;
+    height: 16rem;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.1s ease;
+    animation: fire-blow 1s infinite;
+}
+
+.fire-hero-heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+#hero-cv-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-weight: 800;
+    border-radius: 2rem;
+    width: 15rem;
+}
+
+#hidden_text {
+    color: white;
+    font-weight: 800;
+    font-weight: 400;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #007BFF;
+    letter-spacing: 3px;
+    font-size: large;
+}
+
+#arrow-cv-circle {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 3rem;
+    border: 3px solid white;
+    padding: 0.5rem;
+}
+.hero-cv-div:hover #hidden_text{
+transition: ease-in 0.5s;
+transform: scale(1.2);
+}
+#arrow-cv-svg {
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(40deg);
+}
+
+.hero-cv-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+@media (max-width: 1200px) {
+    .hero-heading {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+    #space-hero-heading {
+        padding-left: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 1rem;
+    }
+
+    .hero-heading {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    #space-hero-heading {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #space-hero-heading {
+        padding-left: 1rem;
+    }
+
+    .hero-welcome  {
+        font-size: 1rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 2.5rem;
+    }
+
+    .hero-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-cv-btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
